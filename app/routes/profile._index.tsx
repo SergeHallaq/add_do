@@ -5,7 +5,8 @@ export default function ProfileIndexPage() {
   const user = useUser()
   return (
     <div><h1>{user.email}</h1>
-      <p></p>
+      <p>{user.id}</p>
+      {/* {update prisma schema to include profile data} */}
     </div>
   );
 }
